@@ -37,16 +37,14 @@ public class Listiterators {
 		ListIterator<String> shows1=tvseries.listIterator(tvseries.size());
 		while(shows1.hasPrevious()) {
 			System.out.println(shows1.previous());
-		}
-		
-		
+		}		
 		//4 iterator and ForEachRemaining
 		
 		System.out.println("********iterator and ForEachRemaining********");
 		tvseries.iterator().forEachRemaining(shows2->{
 				System.out.println(shows2);
 		});
-		
+
 		//5 Simple forEach 
 		System.out.println("********ForEach********");
 		for(String shows3:tvseries) {
